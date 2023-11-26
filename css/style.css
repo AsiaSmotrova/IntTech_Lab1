@@ -1,0 +1,54 @@
+.KhMain,
+.KhNURE {
+    text-align: justify;
+}
+
+img{
+    border: 4px double black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.bgImage{
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    z-index: -99;
+    opacity: 0.1;
+}
+
+.KhNURE > p{
+    color: purple;
+}
+
+.KhMain > p:nth-child(3){
+    color: rgba(253, 100, 24, 0.825);
+}
+
+.var1{
+    display: flex;
+    background-color: #ccc;
+    justify-content: space-evenly;
+    padding: 15px 0;
+}
+
+.var1 > div{
+    font-size: xx-large;
+    padding: 0 50px 0 50px;
+}
+
+.elem1{
+    order: 3;
+    background-color: green;
+}
+.elem2{
+    order: 4;
+    background-color: blue;
+}
+.elem3{
+    order: 1;
+    background-color: blue;
+}
+.elem4{
+    order: 2;
+    background-color: red;
+}
