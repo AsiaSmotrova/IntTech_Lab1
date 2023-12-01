@@ -61,7 +61,7 @@ function generateTable() {
     const minRange = parseInt(document.getElementById('minRange').value);
     const maxRange = parseInt(document.getElementById('maxRange').value);
   
-    if (isNaN(minRange) || isNaN(maxRange)) {
+    if ((isNaN(minRange) || isNaN(maxRange)) || minRange > maxRange) {
       alert('Please enter valid numeric values for min and max range.');
       return;
     }
