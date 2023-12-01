@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.file-list {
+    width: 30%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.editor {
+    width: 70%;
+    padding: 20px;
+    border: 4px solid #f2f2f2;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 10px;
+}
