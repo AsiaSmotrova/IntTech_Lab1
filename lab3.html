@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Image Slider and Table</title>
+</head>
+<body>
+  <a href="index.html"><h3>Назад до переліку завдань</h3></a>
+  <br>
+  <!-- Image Slider Modal -->
+  <div id="intervalModal" class="modal">
+    <div class="modal-content">
+      <label for="intervalInput">Set Interval for Image Slider (in milliseconds):</label>
+      <input type="number" id="intervalInput" />
+      <button onclick="setIntervalAndStartSlider()">Set Interval</button>
+    </div>
+  </div>
+
+  
+
+  <!-- Page Content -->
+  <div class="page-content">
+    <h1 align="center">Welcome to the Prague!</h1>
+
+    <!-- Image Slider -->
+    <div class="image-slider-container">
+        <img id="sliderImage" src="img/image1.jpg" alt="Slider Image">
+    </div>
+
+    <h2 align="center">Generate random chessboard!</h2>
+    <div class="table-creator">
+        <div class="table-creator-inputs">
+            <label for="minRange">Min Range:</label>
+            <input type="number" id="minRange" style="flex: 1;"/>
+            <label for="maxRange">Max Range:</label>
+            <input type="number" id="maxRange" style="flex: 1;"/>
+        </div>
+        <button onclick="generateTable()" class="generateTableButton">Generate Table</button>
+        <div id="chessboardTable"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
