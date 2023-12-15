@@ -25,12 +25,12 @@ function setIntervalAndStartSlider() {
 }
 
 function startImageSlider(interval) {
-  const imageSources = ['img/image2.jpg', 'img/image3.jpg', 'img/image1.jpg']; // Add your image sources
+  const imageSources = ['img/image2.jpg', 'img/image3.jpg', 'img/image1.jpg']; 
   let currentIndex = 0;
 
   imageSliderInterval = setInterval(() => {
     sliderImage.src = imageSources[currentIndex];
-    currentIndex = (currentIndex + 1) % imageSources.length;
+     currentIndex = (currentIndex + 1) % imageSources.length;
   }, interval);
 }
 
@@ -48,11 +48,11 @@ function changeBackgroundColor() {
   
     // You can customize these colors based on your preference
     if (currentHour >= 6 && currentHour < 12) {
-      body.style.backgroundColor = '#FFD700'; // Morning color
+      body.style.backgroundColor = '#f2dfa0'; // Morning color
     } else if (currentHour >= 12 && currentHour < 18) {
-      body.style.backgroundColor = '#87CEEB'; // Afternoon color
+      body.style.backgroundColor = '#c25848'; // Afternoon color
     } else {
-      body.style.backgroundColor = '#696969'; // Evening/Night color
+      body.style.backgroundColor = '#5076a1'; // Evening/Night color
     }
   }
 
@@ -67,7 +67,7 @@ function generateTable() {
     }
   
     const chessboardTable = document.getElementById('chessboardTable');
-    chessboardTable.innerHTML = ''; // Clear existing table if any
+    chessboardTable.innerHTML = ''; // Clear existing table
   
     for (let i = 0; i < 10; i++) {
       if (i % 2 == 0) {
