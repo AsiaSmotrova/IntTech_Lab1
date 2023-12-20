@@ -1,0 +1,138 @@
+p{
+font-size: large;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.game-board{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gameboard-cont{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    width: 20px;
+    height: 20px;
+    border: solid 1px #917c8f;
+    box-sizing: border-box;
+}
+
+#flip-btn{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #884e4e;
+    background-color: antiquewhite;
+    width: 80px;
+    height: 30px;
+    margin: 0 10px 20px 0;
+}
+
+#start-btn{
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #884e4e;
+    background-color: antiquewhite;
+    width: 80px;
+    height: 30px;
+    margin: 0 0 20px 10px;
+}
+
+.option-cont {
+    width: 500px;
+    height: 70px;
+    justify-content: space-between;
+    background-color: #f8ecce;
+    margin: 30px 0;
+    display:flex;
+    align-items: center;
+}
+
+.destroyer,
+.destroyer1,
+.destroyer2,
+.destroyer3,
+.destroyer4{
+    background-color: #884e4e;
+}
+
+.submarine,
+.submarine1{
+    background-color: #a099ff;
+}
+
+.cruiser{
+    background-color: #f365f8;
+}
+
+.battleship,
+.battleship1{
+    background-color: #fb9e52;
+}
+
+.carrier{
+    background-color: #5865ed;
+}
+
+.destroyer-preview{
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+}
+
+.submarine-preview{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+}
+
+.cruiser-preview{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+}
+
+.battleship-preview{
+    width: 50px;
+    height: 10px;
+    margin: 3px;
+}
+
+.carrier-preview{
+    width: 60px;
+    height: 10px;
+    margin: 3px;
+}
+
+#computer .destroyer,
+#computer .destroyer1,
+#computer .destroyer2,
+#computer .destroyer3,
+#computer .destroyer4,
+#computer .submarine,
+#computer .submarine1,
+#computer .cruiser,
+#computer .battleship,
+#computer .battleship1,
+#computer .carrier{
+background-color: #FFE27F;
+}
+
+
+
+.hover{
+    background-color: gray !important;
+}
+
+.boom{
+    background-color: #cb3d3d !important;
+}
+
+.empty{
+    background-color: #5c565b;
+}
