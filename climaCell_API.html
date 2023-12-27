@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleCell.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+
+    <a href="index.html"><h3>Назад до переліку завдань</h3></a>
+    <br>
+
+    
+    <div class="weather-container">
+        <h1>Weather Forecast</h1>
+
+        <h1><span id="position">Kharkiv</span> <span id="textday"></span></h1>
+
+        <div id="weather-info">
+            <div id="weather-temp">Something</div>
+            <div id="weather-hum">Something</div>
+            <div id="weather-code">Something</div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="day-weather-container">
+        <div id="day-weather-temp00">No Data</div>
+        <div id="day-weather-temp02">No Data</div>
+        <div id="day-weather-temp04">No Data</div>
+        <div id="day-weather-temp06">No Data</div>
+        <div id="day-weather-temp08">No Data</div>
+        <div id="day-weather-temp10">No Data</div>
+        <div id="day-weather-temp12">No Data</div>
+        <div id="day-weather-temp14">No Data</div>
+        <div id="day-weather-temp16">No Data</div>
+        <div id="day-weather-temp18">No Data</div>
+        <div id="day-weather-temp20">No Data</div>
+        <div id="day-weather-temp22">No Data</div>
+        
+
+    </div>
+
+
+
+
+
+    <div class="days-container">
+        <div id="btn1">
+            <span id="day1"></span>
+        </div>
+        <div id="btn2">
+            <span id="day2"></span>
+        </div>
+        <div id="btn3">
+            <span id="day3"></span>
+        </div>
+        <div id="btn4">
+            <span id="day4"></span>
+        </div>
+        
+
+    </div>
+
+    <div class="changeLocation">
+        <button id="changeLocationBtn">Change Location</button>
+    </div>
+
+    <!-- Modal structure -->
+    <div id="locationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Change Location</h2>
+            <label for="newLatitude">Latitude:</label>
+            <input type="text" id="newLatitude" placeholder="Enter new latitude">
+            <label for="newLongitude">Longitude:</label>
+            <input type="text" id="newLongitude" placeholder="Enter new longitude">
+            <button id="confirmLocationBtn">Confirm</button>
+        </div>
+    </div>
+    
+    <script src="js/climaCell.js"></script>
+</body>
+</html>
+
+
+
+
